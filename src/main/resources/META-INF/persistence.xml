@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="DemoJPA" transaction-type="RESOURCE_LOCAL">
+    <!--    <class>DomainModels.Category</class>
+    <class>DomainModels.Product</class>-->
+    <class>domainModels.NSX</class>
+    <class>domainModels.ChiTietGioHang</class>
+    <class>domainModels.ChiTietSanPham</class>
+    <class>domainModels.KhachHang</class>
+    <class>domainModels.SanPham</class>
+    <class>domainModels.HoaDon</class>
+    <class>domainModels.HoaDonChiTiet</class>
+    <class>domainModels.CuaHang</class>
+    <class>domainModels.GioHang</class>
+    <class>domainModels.NhanVien</class>
+    <class>domainModels.MauSac</class>
+    <class>domainModels.ChucVu</class>
+    <class>domainModels.DongSP</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=FINALASS_FPOLYSHOP_FA22_SOF205__SOF2041"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.password" value="12345678"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
