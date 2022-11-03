@@ -32,6 +32,13 @@ public class ChiTietSanPhamRepo {
         List<Object[]> list = q.getResultList();
         return list;
     }
+    public List<ChiTietSanPham> listtesst() {
+        Session session = HibernatUtil.getFACTORY().openSession();
+        Query q = session.createQuery("From ChiTietSanPham");
+
+        List<ChiTietSanPham> list = q.getResultList();
+        return list;
+    }
 
     public boolean add(ChiTietSanPham ct, String idsp, String idnsx, String idmau, String idDong) {
         try {
@@ -135,13 +142,18 @@ public class ChiTietSanPhamRepo {
     
     public static void main(String[] args) {
         ChiTietSanPhamRepo rp = new ChiTietSanPhamRepo();
-        List<Object[]> list = rp.list();
-         List<SanPhamVModel> i = new ArrayList<>();
-         for (Object[] hd : list) {
-            i.add(new SanPhamVModel(hd[0].toString(), hd[1].toString(), hd[2].toString()));
+        List<ChiTietSanPham> a  = rp.listtesst();
+        
+        for (ChiTietSanPham chiTietSanPham : a) {
+            System.out.println(a.toString());
         }
-         for (SanPhamVModel sanPhamVModel : i) {
-             System.out.printf(sanPhamVModel.toString());
-        }
+//        List<Object[]> list = rp.list();
+//         List<SanPhamVModel> i = new ArrayList<>();
+//         for (Object[] hd : list) {
+//            i.add(new SanPhamVModel(hd[0].toString(), hd[1].toString(), hd[2].toString()));
+//        }
+//         for (SanPhamVModel sanPhamVModel : i) {
+//             System.out.printf(sanPhamVModel.toString());
+//        }
     }
 }

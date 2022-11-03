@@ -204,6 +204,8 @@ public class ChiTietSanPham implements Serializable {
         return "ChiTietSanPham{" + "Id=" + Id + ", IdSP=" + IdSP + ", IdNsx=" + IdNsx + ", IdMauSac=" + IdMauSac + ", IdDongSP=" + IdDongSP + ", NamBH=" + NamBH + ", MoTa=" + MoTa + ", SoLuongTon=" + SoLuongTon + ", GiaNhap=" + GiaNhap + ", GiaBan=" + GiaBan + ", chiTietGioHangs=" + chiTietGioHangs + ", hoaDonChiTiets=" + hoaDonChiTiets + '}';
     }
 
+    
+
    
     
     
